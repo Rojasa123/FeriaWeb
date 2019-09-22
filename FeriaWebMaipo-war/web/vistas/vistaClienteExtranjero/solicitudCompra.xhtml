@@ -15,10 +15,13 @@
                     <p:outputLabel value="Cantidad de Productos"/> 
                     <p:inputText />
                     <br></br>
-                    <p:selectOneMenu value="#{productoController.producto}"> 
+                    <h:selectOneMenu value="#{productoController.producto}"> 
                         <f:selectItems value="#{productoController.rescatar_productos()}"/>
-                    </p:selectOneMenu>
+                    </h:selectOneMenu>
                     <br></br>
+                    <h:selectOneMenu value="#{usuarioControlador}"> 
+                        <f:selectItems value="#{usuarioControlador.listarDireccion()}"/>
+                    </h:selectOneMenu>
                     <p:commandButton value="Solicitar Productos"></p:commandButton>
                 </h:form>      
 
