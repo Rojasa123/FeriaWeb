@@ -3,27 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaGeneral/login.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaTransportista/postularSubasta.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteExtranjero/solicitudCompra.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/src/java/Controladores/usuarioControlador.java</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaGeneral/registroUsu.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaAdmin/inicioAdmin.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaBodeguero/inicioBodeguero.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/index.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/src/java/Controladores/tipoUsuarioBean.java</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaTransportista/inicioTransportista.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaConsultor/inicioConsultor.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaProductor/checkout.html</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaProductor/publicarProductos.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteExtranjero/estadoCompra.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/resources/resourcesAdmin/css/bootstrap.min.css</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/plantillas/plantillasPrincipal/MasterPage.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteLocal/inicioClienteLocal.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaProductor/postularVentaExterna.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaGeneral/tipoUsu.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaProductor/inicioProductor.xhtml</file>
-            <file>file:/C:/Users/eroja/Documents/NetBeansProjects/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteExtranjero/inicioClienteExtranjero.xhtml</file>
+            <file>file:/C:/Users/Patricio/Documents/FeriaWeb/FeriaWebMaipo-war/web/index.xhtml</file>
+            <file>file:/C:/Users/Patricio/Documents/FeriaWeb/FeriaWebMaipo-war/src/java/Controladores/ProductoController.java</file>
+            <file>file:/C:/Users/Patricio/Documents/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteExtranjero/solicitudCompra.xhtml</file>
+            <file>file:/C:/Users/Patricio/Documents/FeriaWeb/FeriaWebMaipo-war/src/java/Controladores/tipoUsuarioBean.java</file>
+            <file>file:/C:/Users/Patricio/Documents/FeriaWeb/FeriaWebMaipo-war/web/vistas/vistaClienteExtranjero/inicioClienteExtranjero.xhtml</file>
         </group>
     </open-files>
 </project-private>
