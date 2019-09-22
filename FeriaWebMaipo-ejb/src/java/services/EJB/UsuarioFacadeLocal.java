@@ -33,5 +33,5 @@ public interface UsuarioFacadeLocal {
     //Inicio de sesion
     Usuario iniciarSesion(Usuario us);
 
-
+void actualizar();
 } 

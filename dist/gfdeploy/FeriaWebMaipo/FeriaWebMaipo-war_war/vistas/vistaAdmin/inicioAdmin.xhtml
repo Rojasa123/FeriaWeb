@@ -1,14 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
     <body>
 
-        <ui:composition template="./masterPagePanel.xhtml">
+        <ui:composition template="./../../plantillas/plantillasPrincipal/MasterPage.xhtml">
 
             <ui:define name="content">
-                Inicio Panel de control ADMINISTRADOR
+                
+                <h2>Bienvenido Administrador!</h2> 
+                
+                <h:form id="form">
+                    <h3>Datos de usuario</h3>
+                    <p:dataTable id="tabla" value="#{usuarioControlador.usuarioLogueado()}" var="u" rows="7" editable="true">
+                           
+                        <p:column headerText="RUT">
+                            <h:outputText value="#{u.rut}"/>
+                            </p:column>
+                        <p:column headerText="Nombre">
+                            <h:outputText value="#{u.nombre}"/>
+                            </p:column>
+                        <p:column headerText="Paterno">
+                            <h:outputText value="#{u.apellidoP}"/>
+                            </p:column>
+                        <p:column headerText="Materno">
+                            <h:outputText value="#{u.apellidoM}"/>
+                            </p:column>
+                        <p:column headerText="N° Telefónico">
+                            <h:outputText value="#{u.numeroTelefonico}"/>
+                            </p:column>
+                        <p:column headerText="Email">
+                            <h:outputText value="#{u.email}"/>
+                            </p:column>
+                        <p:column headerText="Contraseña">
+                            <h:outputText value="#{u.contrasena}"/>
+                            </p:column>
+                        <p:column headerText="Editar">
+                            <p:commandLink value="Editar" actionListener="#{usuarioControlador.leer(u)}" oncomplete="PF('wdialogo').show();">
+                                
+                            </p:commandLink>
+                            </p:column>
+                        
+                    </p:dataTable>
+                    </h:form>
+                <p:dialog id="dialogo" widgetVar="wdialogo" header="Nuevos Datos" modal="true" resizable="false" closeOnEscape="true" draggable="false">
+                    <h:form>
+                        <h:panelGrid columns="2">
+                            <p:outputLabel for="txtNombre" value="Nombre"/>
+                            <p:inputMask id="txtNombre" mask="" required="true" value="#{usuarioControlador.usuario.nombre}"/>
+                            <p:commandButton value="Editar" icon="ui-icon-check" update=":form:tabla" actionListener="#{usuarioControlador.actualizar()}" oncomplete="PF ('wdialogo').hide();" rendered="#{usuarioControlador.accion == 'M'}" />
+                            <p:commandButton value="Cancelar" icon="ui-icon-close" immediate="true" onclick="PF('wdialogo').hide();"/>  
+                        </h:panelGrid>
+                        </h:form>
+                    </p:dialog>
             </ui:define>
 
         </ui:composition>

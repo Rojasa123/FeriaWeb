@@ -12,17 +12,22 @@
 
             <ui:define name="content">
                 <h:form>
-                    <p:outputLabel value="Cantidad de Productos"/> 
-                    <p:inputText />
-                    <br></br>
-                    <h:selectOneMenu value="#{productoController.producto}"> 
-                        <f:selectItems value="#{productoController.rescatar_productos()}"/>
-                    </h:selectOneMenu>
-                    <br></br>
-                    <h:selectOneMenu value="#{usuarioControlador}"> 
-                        <f:selectItems value="#{usuarioControlador.listarDireccion()}"/>
-                    </h:selectOneMenu>
-                    <p:commandButton value="Solicitar Productos"></p:commandButton>
+                    <p:fieldset legend="Datos de la solicitud">
+                        <p:panelGrid columns="2">
+                            <p:outputLabel value="Cantidad de Productos"/> 
+                            <p:inputText value="#{solicitudVentaExternaController.solicitudve.cantidadSolicitada}"/>
+                            <p:outputLabel value="Producto"/> 
+                            <h:selectOneMenu value="#{solicitudVentaExternaController.solicitudve.productoFk}"> 
+                                <f:selectItems value="#{productoController.rescatar_productos()}"/>
+                            </h:selectOneMenu>
+                            <p:outputLabel value="Dirección"/>
+                            <p:inputText value="#{solicitudVentaExternaController.solicitudve.direccion}"/>
+
+
+                        </p:panelGrid>
+                        <br></br>
+                        <p:commandButton value="Solicitar Productos" actionListener="#{solicitudVentaExternaController.registrarSolicitud()}"></p:commandButton>
+                    </p:fieldset>
                 </h:form>      
 
             </ui:define>

@@ -7,6 +7,7 @@ package Controladores;
 
 import Modelos.SolicitudVentaExterna;
 import java.io.Serializable;
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.bean.ViewScoped;
 import javax.inject.Named;
@@ -24,6 +25,11 @@ public class SolicitudVentaExternaController implements Serializable {
     private SolicitudVentaExternaFacadeLocal solicitudveEJB;
     private SolicitudVentaExterna solicitudve;
 
+    @PostConstruct
+    public void init() {
+        solicitudve = new SolicitudVentaExterna();
+    }
+
     public SolicitudVentaExterna getSolicitudve() {
         return solicitudve;
     }
@@ -32,10 +38,9 @@ public class SolicitudVentaExternaController implements Serializable {
         this.solicitudve = solicitudve;
     }
 
-    
-        public void registrarSolicitud(){
-            try {
-solicitudveEJB.create(solicitudve);
+    public void registrarSolicitud() {
+        try {
+            solicitudveEJB.create(solicitudve);
         } catch (Exception e) {
         }
     }
